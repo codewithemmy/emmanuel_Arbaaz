@@ -162,6 +162,15 @@
         <br>
         <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted,
           the identifier is assumed to represent a variable.</p>
+          <br>
+          <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p><br>
+          
+          <div class="innerbox">
+            <p>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+              WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+              //statements }</p>
+          </div>
+
 
       <!-- Arbaaz code from here -->
       <br>
